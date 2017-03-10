@@ -1,0 +1,152 @@
+
+.content{
+    margin: 0 auto;
+    width: 1160px;
+}
+
+
+@media (max-width: 1200px) {
+
+    .content{
+        margin: 0 auto;
+        width: 960px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .content{
+        margin: 0 auto;
+        width: 710px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .content{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .project{
+        min-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.about-us, section.project-wrapper{
+    padding: 30px;
+    border: black solid 1px;
+}
+
+h1.title{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+/*about us*/
+section.about-us{
+    height: 100vh;
+}
+
+.about-us article{
+    margin-top: 50px;
+    line-height: 30px;
+    font-size: 20px;
+    display: none;
+}
+
+/*projects*/
+
+section.project-wrapper{
+    border: solid 1px black;
+    padding: 0;
+}
+
+
+
+.projects{
+    border: 1px solid black;
+    margin-top: 30px;   
+}
+
+.project{
+    position: relative;
+    border: 1px solid black;
+    border-radius: 10px;
+    word-wrap: break-word;
+    opacity: 0;
+}
+
+
+.project-img img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-content{
+    padding: 10px;
+}
+
+.project-content h1{
+    font-family: '微軟正黑體';
+    font-weight: bold;
+}
+
+.project-content article{
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.progress-bar{
+    margin-top: 20px;
+    text-align: center;
+    height: 15px;
+    border: black solid 1px;
+    border-radius: 4px;
+    background: linear-gradient(to right, seagreen 70%, white 0%);
+}
+
+/*animation*/
+
+.animate{
+    animation: show 700ms ease forwards;
+}
+
+
+@keyframes show{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+        
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/*rwd*/
+
+@media(max-width: 960px){
+    .project{
+        
+    }
+}
