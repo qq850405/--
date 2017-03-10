@@ -1,0 +1,65 @@
+
+.content{
+    margin: 0 auto;
+    width: 1160px;
+}
+
+
+@media (max-width: 1200px) {
+
+    .content{
+        margin: 0 auto;
+        width: 960px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .content{
+        margin: 0 auto;
+        width: 710px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .content{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .project{
+        min-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+h1.project-name{
+    text-align: center;
+    font-family: "微軟正黑體";
+    font-size: 25px;
+    margin-top: 200px;
+}
+
+.project-upper{
+    margin: 50px 0;
+}
+
+.project-pic{
+    position: relative;
+    
+    border: black solid 1px;
+}
+
+.project-pic img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.project-outline{
+    border: black solid 1px;
+    text-align: center;
+    word-wrap: break-word;
+}

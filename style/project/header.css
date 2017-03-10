@@ -1,0 +1,32 @@
+@import url('../header.css');
+
+header{
+    height: auto;
+}
+
+
+.navbar{
+    color: black;
+    height: 90px;
+    border: black solid 1px;
+    background-color: white;
+}
+
+.nav-brand{
+    padding: 33px;
+}
+
+.underline{
+    border: black solid 1px;
+}
+
+.nav-menu li.nav-search .icon-search-open{
+    color: black;
+}
+
+.nav-menu{
+    padding: 0 25px;
+}
+
+
+
