@@ -22,6 +22,12 @@ $(function (){
             
     });
 
+    //mobile-dropdown
+    $('.mobile-dropdown-btn').on('click', function() {
+        $('.mobile-dropdown').toggleClass('is-opened');
+    });
+
+    //click anywhere else to close
     $(document).on('click', function (e) {
         if ($(e.target).closest("li.nav-search").length === 0) {
             $(".nav-menu > li.nav-search > form, li.nav-search > form > input, li.nav-search > .icon-search, li.nav-search > .icon-search-open").removeClass('is-opened');
@@ -30,26 +36,34 @@ $(function (){
         if ($(e.target).closest(".mobile-nav,.close").length === 0) {
             $(".mobile-nav, .close").removeClass('is-opened');
         }
+
+        if ($(e.target).closest(".mobile-dropdown").length === 0) {
+            $(".mobile-dropdown").removeClass('is-opened');
+        }
     });  
     
+    //nav-search
     $('.nav-menu > li.nav-search > .icon-search').on('click', function() {
         $('#form-nav').submit();
     });
 
+    //mobile-nav-search
     $('.mobile-nav-menu > li.nav-search > .icon-search').on('click', function() {
         $('#form-mobile-nav').submit();
     });
+
     //mobile-nav toggle
     $('.close').on('click', function() {
         $('.mobile-nav').toggleClass('is-opened');
         $('.close').toggleClass('is-opened');
     });
 
-
+    //nav-search toggle
     $('.mobile-nav-menu > .nav-search > i').on('click', function() {
         $('.mobile-nav-menu > .nav-search > form, .mobile-nav-menu > .nav-search > form > input').toggleClass('is-opened');
     });
 
+    
 
 
     $(window).scroll(function() {
@@ -67,7 +81,7 @@ $(function (){
         }else if(scrollTop == 0){
             $('.navbar').removeClass('white is-shrinked');
             $('.underline').removeClass('black-underline');
-            $('.nav-menu, .nav-brand, .nav-menu > li, li.nav-search, .dropdown-list, .icon-search').removeClass('is-shrinked');
+            $('.nav-menu, .nav-brand, .nav-menu > li, li.nav-search, .dropdown-list, .nav-search > .icon-search-open').removeClass('is-shrinked');
             //$('.navbar').on('mouseover', function() {
                 //$(this).addClass('white');
           //  });
@@ -77,7 +91,7 @@ $(function (){
         }
 
 
-            //about-us fade in
+        //about-us fade in
         if(scrollTop >= x){
             $('.about-us > article').fadeIn(800);
         }
