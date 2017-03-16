@@ -2,7 +2,18 @@
 .content{
     margin: 0 auto;
     width: 1160px;
+    padding: 200px 0 0 0;
+    transition: filter 0.3s ease;
 }
+
+.content.is-overlayed{
+    filter: brightness(10%);
+}
+
+.content.no-overlayed{
+    filter: brightness(100%);
+}
+
 
 
 @media (max-width: 1200px) {
@@ -38,7 +49,6 @@ h1.project-name{
     text-align: center;
     font-family: "微軟正黑體";
     font-size: 25px;
-    margin-top: 200px;
 }
 
 .project-upper{

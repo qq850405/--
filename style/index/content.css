@@ -1,8 +1,11 @@
 
+
 .content{
     margin: 0 auto;
     width: 1160px;
+    padding: 100px 0;
 }
+
 
 
 @media (max-width: 1200px) {
@@ -67,8 +70,6 @@ section.project-wrapper{
     padding: 0;
 }
 
-
-
 .projects{
     border: 1px solid black;
     margin-top: 30px;   
@@ -86,7 +87,11 @@ section.project-wrapper{
 .project-img img{
     width: 100%;
     border-radius: 10px 10px 0 0;
+    transition: 0.3s ease;
+    filter: brightness(100%);
 }
+
+
 
 .project-content{
     padding: 10px;
@@ -110,14 +115,22 @@ section.project-wrapper{
     border: black solid 1px;
     border-radius: 4px;
     background: linear-gradient(to right, seagreen 70%, white 0%);
+    transition: 0.3s ease;
 }
+
+
+
+hr{
+    transition: 0.3s ease;
+}
+
+
 
 /*animation*/
 
 .animate{
     animation: show 700ms ease forwards;
 }
-
 
 @keyframes show{
     0%{
@@ -131,7 +144,18 @@ section.project-wrapper{
     }
 }
 
+/*overlay*/
+.project-img img.is-overlayed{
+    filter: brightness(10%);
+}
 
+.progress-bar.is-overlayed{
+    filter: brightness(10%);
+}
+
+hr.is-overlayed{
+    border-color: rgba(26, 26, 26, 0.9);
+}
 /*rwd*/
 
 @media(max-width: 960px){

@@ -1,11 +1,23 @@
-footer{
-    margin: 100px 0 0 0;
-}
+
 
 .footer-nav{
     background-color: lightseagreen;
     padding: 50px;
     text-align: center;
-    position: relative;
-    bottom: 0;
+    transition: filter 0.3s ease;
 }
+
+.footer-nav.is-overlayed{
+    filter: brightness(10%);
+}
+
+.footer-nav.no-overlayed{
+    filter: brightness(100%);
+}
+
+
+
+
+
+
+
