@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>微望 We Want</title>
+        <meta charset = "utf-8">       
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "style/login/main.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src = "js/main.js"></script>
+    </head>
+    <script>
+        $(function(){
+            $(".navigation").load("navbar.html"); 
+            $("footer").load("footer.html"); 
+        });
+        
+    </script>
+    <body class = "login">
+        <header>
+            <div class = "navigation"></div>
+        </header>
+        
+        <main>
+            <div class = "overlay">
+                <div class = "content">
+                    <section class = "login">
+                        <h1>登入</h1>
+                        <div class = "form-login">
+                            <div class = "form-community">
+                                <h1>使用以下服務登入</h1>
+                                <input type = "button" class = "fb" value = "Facebook">
+                                <input type = "button" class = "google" value = "Google">
+                            </div>
+                            <div class = "separation-line"></div>
+                            <form>
+                                <h1>使用 Email 登入</h1>
+                                <input id = "account" type = "text" placeholder = "帳號"><br>
+
+                                <input id = "password" type = "text" placeholder = "密碼"><br>
+                                
+                                <div id = "verify-pic" class = "verify-pic">JXA5</div>
+                                <input id = "verify" class = "verify" type = "text" placeholder = "驗證碼"><br>
+
+                                <input type = "submit" vale = "登入">
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
+        
+    </body>
+</html>

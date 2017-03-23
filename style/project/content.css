@@ -6,13 +6,11 @@
     transition: filter 0.3s ease;
 }
 
-.content.is-overlayed{
+.project-pic img.is-overlayed{
     filter: brightness(10%);
 }
 
-.content.no-overlayed{
-    filter: brightness(100%);
-}
+
 
 
 
@@ -41,7 +39,6 @@
 
     .project{
         min-width: 100%;
-        margin: 10px 0;
     }
 }
 
@@ -66,6 +63,8 @@ h1.project-name{
     display: block;
     margin: 0 auto;
     border-radius: 5px;
+    transition: 0.3s ease;
+    filter: brightness(100%);
 }
 
 .project-outline{

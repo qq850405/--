@@ -3,7 +3,7 @@
 .content{
     margin: 0 auto;
     width: 1160px;
-    padding: 100px 0;
+    transition: filter 0.3s ease;
 }
 
 
@@ -42,7 +42,6 @@
 
 section.about-us, section.project-wrapper{
     padding: 30px;
-    border: black solid 1px;
 }
 
 h1.title{
@@ -54,6 +53,7 @@ h1.title{
 /*about us*/
 section.about-us{
     height: 100vh;
+    border: black solid 1px;
 }
 
 .about-us article{
@@ -66,21 +66,21 @@ section.about-us{
 /*projects*/
 
 section.project-wrapper{
-    border: solid 1px black;
     padding: 0;
+    border: black solid 1px;
 }
 
 .projects{
-    border: 1px solid black;
     margin-top: 30px;   
+    border: black solid 1px;
 }
 
 .project{
     position: relative;
-    border: 1px solid black;
     border-radius: 10px;
     word-wrap: break-word;
     opacity: 0;
+    border: black solid 1px;
 }
 
 
@@ -145,17 +145,11 @@ hr{
 }
 
 /*overlay*/
-.project-img img.is-overlayed{
+.content.is-overlayed{
     filter: brightness(10%);
 }
 
-.progress-bar.is-overlayed{
-    filter: brightness(10%);
-}
 
-hr.is-overlayed{
-    border-color: rgba(26, 26, 26, 0.9);
-}
 /*rwd*/
 
 @media(max-width: 960px){
