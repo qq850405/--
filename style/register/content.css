@@ -1,13 +1,20 @@
+
 .content{
     margin: 0 auto;
     width: 450px;
-    padding: 150px 0 54px 0;
+    padding: 180px 0 54px 0;
     border: rgba(0, 0, 0, 0) solid 1px;
     transition: filter 0.3s ease;
 }
 
 @media (min-width: 500px) {
-    
+    .form-community{
+        width: 50%;
+    }
+
+    .form-register form{
+        width: 80%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -16,100 +23,82 @@
         width: 100%;
     }
 
-    
+    .form-register{
+        flex-direction: column;
+    }
 
-    
+    .separation-line{
+        display: none;
+    }
+
+    .form-community{
+        width: 100%;
+    }
+
+    .form-register form{
+        width: 80%;
+    }
 
 }
 
 @media (max-width: 400px) {
-    
+    .form-register form input.verify{
+        max-width: 69%;
+    }
 }
 
 .content.is-overlayed{
     filter: brightness(10%);
 }
 
-.login h1{
+.register h1:nth-child(1){
     text-align: center;
     font-family: "微軟正黑體";
     font-size: 30px;
+    letter-spacing: 2px;
 }
 
-.form-login{
-    
-    width: 80%;
-    margin: 0px auto;
-    border: rgba(0, 0, 0, 0.5) solid 0px;
+
+.register h1:nth-child(3){
+    text-align: center;
+    font-family: "微軟正黑體";
+    letter-spacing: 1px;
+}
+
+.form-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 20px 0;
     border-radius: 5px;
 }
 
-.form-login h1{
-    text-align: center;
+.form-register h1{
+    text-align: left;
     font-size: 17px;
     font-weight: bold;
-    letter-spacing: 1px;
     font-family: "微軟正黑體";
 }
-
-
 .form-community{
     display: flex;
-    justify-content: center;
-    padding: 50px;
-}
-
-.hr-sect{
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.hr-sect::before{
-    content: "";
-    display: inline-block;
-    height: 1px;
-    width: 50%;
-    margin: 0 10px 0 0;
-    background-color: rgba(0, 0, 0, 0.35);
-    
-}
-
-.hr-sect::after{
-    content: "";
-    display: inline-block;
-    height: 1px;
-    width: 50%;
-    margin: 0 0 0 10px;
-    background-color: rgba(0, 0, 0, 0.35);
-    
+    height: 250px;
 }
 
 .form-community h1{
-    width: 100%;
+    width: 80%;
     margin: 0 0 20px 0;
 }
 
 .form-community input{
-    width: 100%;
+    width: 80%;
     margin: 3px 0;
     color: white;
     border: rgba(0, 0, 0, 1) solid 1px;
-    transition: 0.3s ease;
 }
 
-.form-community input.is-overlayed{
-    filter: brightness(10%);
-}
-
-.form-community .fb,
-.form-community .google{
-    display: inline-block;
-    margin: 0 10px;
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-}
 .form-community .fb{
     background-color: royalblue;
 }
@@ -118,41 +107,35 @@
     background-color: darkred;
 }
 
-
-
-
-.form-login form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0;
+.separation-line{
+    width: 0;
+    height: 230px;
+    margin: 0 20px;
+    border: black solid 1px;
 }
 
 
-.form-login form input{
+
+.form-register form input{
     width: 100%;
-    margin: 5px 0;
     height: 43px;
+    margin: 5px 0;
     background-color: transparent;
     border: rgba(0, 0, 0, 0.5) solid 1px;
-    transition: 0.25s ease;
+    transition: box-shadow 0.25s ease;
 }
 
-
-
-.form-login form input[type="submit"]{
+.form-register form input[type="submit"]{
     font-size: 15px;
     font-family: "微軟正黑體";
     color: rgba(0, 0, 0, 0.8)
 }
 
-
-.form-login form input:focus{
+.form-register form input:focus{
     box-shadow: 0px 0px 5px 2px lightblue;
 }
 
-
-.form-login form h1.verify{
+.form-register form h1.verify{
     position: absolute;
     text-align: left;
     top: 50%;
@@ -163,7 +146,7 @@
     width: 70%;
 }
 
-.form-login form .verify-checkbox{
+.form-register form .verify-checkbox{
     position: relative;
     display: inline-block;  
     width: 30px;
@@ -174,7 +157,6 @@
 } 
 
 form div{
-    width: 100%;
     position: relative;
     border: black solid 1px;
     padding: 10px;
@@ -191,10 +173,14 @@ form img{
     z-index: -1;
 }
 
+
 h1{
     transition: 0.3s ease;
-}
+} 
 
 h1.is-overlayed{
     filter: brightness(10%);
 }
+
+/*animation*/
+

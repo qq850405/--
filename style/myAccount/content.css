@@ -1,0 +1,102 @@
+.content{
+    padding: 120px 200px;
+}
+
+.sidebar{
+    border: black solid 1px;
+    height: 500px;
+    border-radius: 6px;
+}
+
+.profile{
+    border: black solid 1px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/*profile*/
+.profile h1{
+    font-family: "微軟正黑體";
+    font-size: 27px;
+}
+
+
+.profile .pic{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.profile .profile-pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: black solid 1px;
+}
+
+.profile-pic-upload{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 120px;
+    padding: 10px;
+}
+
+.profile-pic-upload h1{
+    font-size: 17px;
+}
+
+.profile-pic-upload h1:nth-child(2){
+    font-size: 13px;
+    color: gray;
+}
+
+.info .part1,
+.info .part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 500px;
+    border: black solid 0px;
+}
+
+
+.info h1{
+    font-size: 17px;
+    margin: 0 0 5px 0;
+}
+
+.info .row{
+    margin: 10px 0;
+}
+
+.part1 .short-bio textarea{
+    resize: vertical;
+    height: 150px;
+}
+
+.part2 .gender .row{
+    padding: 20px;
+    border-radius: 3px;
+    border: black solid 1px;
+}
+.part2 .gender .row div{
+    text-align: center;
+}
+
+.submit{
+    float: left;
+    width: 35%;
+}
+
+
+.part1 input, .part2 input{
+    height: 43px;
+    color: black;
+    transition: 0.2s ease;
+}
+
+input:focus{
+    box-shadow: 0px 0px 5px 2px lightblue;
+}

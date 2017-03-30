@@ -2,13 +2,15 @@
 .content{
     margin: 0 auto;
     width: 1160px;
-    padding: 200px 0 0 0;
+    padding: 200px 0 50px 0;
     transition: filter 0.3s ease;
 }
 
 .project-pic img.is-overlayed{
     filter: brightness(10%);
 }
+
+
 
 
 
@@ -63,12 +65,19 @@ h1.project-name{
     display: block;
     margin: 0 auto;
     border-radius: 5px;
-    transition: 0.3s ease;
-    filter: brightness(100%);
+    transition: filter 0.3s ease;
 }
 
 .project-outline{
     border: black solid 1px;
     text-align: center;
     word-wrap: break-word;
+}
+
+h1{
+    transition: 0.3s ease;
+} 
+
+h1.is-overlayed{
+    filter: brightness(10%);
 }

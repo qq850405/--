@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>微望 We Want</title>
+        <meta charset = "utf-8">       
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "style/myAccount/main.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src = "js/share.js"></script>
+        <script src = "js/myAccount.js"></script>
+    </head>
+    <script>
+        $(function(){
+            $(".navigation").load("navbar.html"); 
+            $("footer").load("footer.html"); 
+        });
+        
+    </script>
+    <body>
+        <header>
+            <div class = "navigation"></div>
+        </header>
+        
+        <main>
+            <div class = "overlay">
+                <div class = "content">
+                    <div class = "row">
+                        <section class = "sidebar columns three">
+
+                        </section>
+                        <section class = "profile columns nine">
+                            <h1>個人資料</h1>
+                            <div class = "pic row">
+                                <div class = "profile-pic"></div>
+                                <div class = "profile-pic-upload">
+                                    <h1>大頭貼</h1>
+                                    <h1>JPEG/GIF/PNG/BMP, at least 250x250px</h1>
+                                    <button>上傳照片</button>
+                                </div>
+                            </div>
+                            <div class = "info row">
+                                <form>
+                                    <div class = "part1 columns six">
+                                        <div class = "name">
+                                            <h1>全名</h1>
+                                            <div class = "row">
+                                                <input type = "text" class = "columns six">
+                                                <input type = "text" class = "columns six">
+                                            </div>
+                                        </div>
+                                        <div class = "username">
+                                            <h1>用戶名</h1>
+                                            <div class = "row">
+                                                <input type = "text" class = "columns twelve">
+                                            </div>
+                                        </div>
+                                        <div class = "short-bio">
+                                            <h1>自我介紹</h1>
+                                            <div class = "row">
+                                                <textarea class = "columns twelve"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "part2 columns six">
+                                        <div class = "email">
+                                            <h1>信箱</h1>
+                                            <div class = "row">
+                                                <input type = "email" class = "columns twelve">
+                                            </div>
+                                        </div>
+                                        <div class = "phone">
+                                            <h1>手機</h1>
+                                            <div class = "row">
+                                                <input type = "tel" class = "columns twelve">
+                                            </div>
+                                        </div>
+                                        <div class = "location">
+                                            <h1>地址</h1>
+                                            <div class = "row">
+                                                <input type = "text" class = "columns twelve"></input>
+                                            </div>
+                                        </div>
+                                        <div class = "birth">
+                                            <h1>生日</h1>
+                                            <div class = "row">
+                                                <select id = "day" class = "columns four"></select>
+                                                <select id = "month" class = "columns four"> </select>
+                                                <select id = "year" class = "columns four"></select>
+                                            </div>
+                                        </div>
+                                        <div class = "gender">
+                                            <h1>性別</h1>
+                                            <div class = "row">
+                                                <div class = "columns six">
+                                                    <input type = "radio" name = "gender" value = "male"> Male
+                                                </div>
+                                                <div class = "columns six">
+                                                    <input type = "radio" name = "gender" value = "female"> Female
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type = "button" value = "修改資料" class = "submit" style = "font-size: 15px;"></button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
+        
+    </body>
+</html>

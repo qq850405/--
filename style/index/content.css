@@ -92,7 +92,6 @@ section.project-wrapper{
 }
 
 
-
 .project-content{
     padding: 10px;
 }
@@ -145,9 +144,13 @@ hr{
 }
 
 /*overlay*/
-.content.is-overlayed{
+.content.is-overlayed, 
+.project-img img.is-overlayed, 
+hr.is-overlayed, 
+.progress-bar.is-overlayed{
     filter: brightness(10%);
 }
+
 
 
 /*rwd*/

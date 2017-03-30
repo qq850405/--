@@ -1,8 +1,11 @@
 
 
 .footer-nav{
+    position: relative;
+    width: 100%;
+    bottom: 0;
     background-color: lightseagreen;
-    padding: 50px;
+    padding: 50px 0;
     text-align: center;
     transition: filter 0.3s ease;
 }
@@ -11,9 +14,6 @@
     filter: brightness(10%);
 }
 
-.footer-nav.no-overlayed{
-    filter: brightness(100%);
-}
 
 
 

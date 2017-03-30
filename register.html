@@ -4,10 +4,10 @@
         <title>微望 We Want</title>
         <meta charset = "utf-8">       
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" type = "text/css" href = "style/login/main.css">
+        <link rel = "stylesheet" type = "text/css" href = "style/register/main.css">
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src = "js/share.js"></script>
-        <script src = "js/login.js"></script>
+        <script src = "js/register.js"></script>
     </head>
     <script>
         $(function(){
@@ -16,7 +16,7 @@
         });
         
     </script>
-    <body class = "login">
+    <body>
         <header>
             <div class = "navigation"></div>
         </header>
@@ -24,13 +24,10 @@
         <main>
             <div class = "overlay">
                 <div class = "content">
-                    <section class = "login">
-                        <h1>登入</h1>
-                        <div class = "form-login">
-                            <div class = "form-community">
-                                <button class = "fb" value = "Facebook"></button>
-                                <button class = "google" value = "Google"></button>
-                            </div><div class = "hr-sect">or</div>
+                    <section class = "register">
+                        <h1>註冊</h1>
+                        <div class = "form-register">
+                            
                             <form>
                                 <input id = "account" type = "text" placeholder = "帳號"><br>
 
@@ -43,12 +40,12 @@
                                     <img src = "pics/check.png">
                                     <h1 class = "verify">I'm not a robot</h1>
                                 </div>
-                                <br>
+                                
+                                <input type = "submit" value = "註冊">
 
-                                <input type = "submit" value = "登入">
                             </form>
-                            <h1>還沒有帳號?立刻<a>註冊</a></h1>
                         </div>
+                        <h1>已經有帳號了?立刻<a>登入</a></h1>
                     </section>
                 </div>
             </div>

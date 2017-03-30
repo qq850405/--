@@ -8,6 +8,10 @@
         overflow: hidden;
     }
 
+    .navbar.is-overlayed{
+        filter: brightness(10%);
+    }
+
     .home-bg{
         position: absolute;
         height: 100%;
@@ -40,6 +44,7 @@
     }
 
     .navbar{
+        box-sizing: content-box;
         position: fixed;
         top: 0;
         width: 100%;
@@ -52,7 +57,8 @@
 
     .nav-brand{
         float: left;
-        padding: 42px 25px;
+        padding: 57px 45px;
+        font-size: 20px;
         transition: 0.3s ease;
     }
 
@@ -216,17 +222,14 @@
         color: white;
         display: flex;
         flex-direction: column;
+        transition: filter 0.3s ease;
     }
 
     .slogan.is-overlayed{
         filter: brightness(10%);
-        transition: filter 0.3s ease;
     }
 
-    .slogan.no-overlayed{
-        filter: brightness(100%);
-        transition: filter 0.3s ease;
-    }
+    
 
 
     .slogan h1{
@@ -364,7 +367,7 @@
         top: 0;
         left: 94%;
         cursor: pointer;
-        margin-top: 20px;
+        margin-top: 15px;
         z-index: 100;
         display: none;
     }
@@ -395,6 +398,24 @@
         top: 14.5px;
         transition: 0.3s cubic-bezier(.24,-0.6,.79,1.61);
     }
+
+    .mobile-nav-brand{
+        display: none;
+        position: relative;
+        top: 25px;
+        left: 5%;
+        width: 128px;
+        color: white;
+        font-size: 20px;
+        z-index: 99;
+        transition: filter 0.3s ease;
+    }
+
+    .nav-hr{
+        display: none;
+    }
+
+    
 
 /*animate*/
 
@@ -434,7 +455,7 @@
     }
 
     .nav-brand.is-shrinked{
-        padding: 25px;
+        padding: 28px 45px;
         color: black;
     }
 
@@ -553,6 +574,11 @@
         transform: rotate(-45deg) scale(1.141421);
     }
 
+    
+    .mobile-nav-brand.is-overlayed{
+        filter: brightness(20%);
+    }
+
 
 
 /*reponsive*/
@@ -568,5 +594,9 @@
     .close{
         display: block;
     }
-}    
+
+    .mobile-nav-brand{
+        display: block;
+    }
     
+}    
