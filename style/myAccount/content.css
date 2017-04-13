@@ -1,11 +1,38 @@
-.content{
-    padding: 120px 200px;
+@media (max-width: 1000px){
+
+    
+    
+    .info .part1, .info .part2{
+        min-width: 100%;
+    }
+
+    .part2{
+        margin: 0;
+    }
 }
 
-.sidebar{
+@media (max-width: 750px){
+    .profile{
+        margin: 0;
+    }
+
+    .info .part1{
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .part1 .name input{
+        min-width: 100%;
+        margin: 0;
+    }
+
+    
+}
+
+.content{
+    width: 1150px;
+    margin: 130px auto;
     border: black solid 1px;
-    height: 500px;
-    border-radius: 6px;
 }
 
 .profile{
@@ -57,14 +84,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 500px;
-    border: black solid 0px;
+    border: black solid 1px;
 }
 
 
 .info h1{
     font-size: 17px;
-    margin: 0 0 5px 0;
+    margin: 10px 0 10px 0;
 }
 
 .info .row{

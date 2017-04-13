@@ -14,7 +14,7 @@ $(function() {
     //mobile-nav toggle
     $('.close').on('click', function() {
         $('.mobile-nav, .close, .overlay').toggleClass('is-opened');
-        $('.navbar, .mobile-nav-brand, .project-img > img, .progress-bar, hr, h1, .project-pic > img, .footer-nav, .form-community > input').toggleClass('is-overlayed');
+        $('.navbar, .mobile-nav-brand, .project-img > img, .progress-bar, hr, h1, .project-pic > img, .footer-nav, .form-community > .cm-btn').toggleClass('is-overlayed');
             if(!$('.slogan').hasClass('is-overlayed'))
                 $('.slogan').removeClass('no-overlayed').addClass('is-overlayed');
             else{
@@ -28,7 +28,7 @@ $(function() {
         }
 
         if($(e.target).closest(".mobile-nav,.close").length === 0) {
-                $(".navbar, .mobile-nav-brand, .project-img > img, .progress-bar, hr, h1, .slogan, .form-community > input").removeClass('is-overlayed');
+                $(".navbar, .mobile-nav-brand, .project-img > img, .progress-bar, hr, h1, .slogan, .form-community > .cm-btn").removeClass('is-overlayed');
                 //$('.slogan').removeClass('is-overlayed');
             }
     });
