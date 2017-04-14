@@ -1,23 +1,29 @@
 $(function (){
 
-        // //bg-img
-        // var images = [
-        //     '../pics/home.jpg',
-        //     '../pics/home2.jpeg',
-        //     '../pics/home3.jpeg'
-        // ]
+         //bg-img
+         var count = 1;
+         var next = 2;
+         var length = 3;
+         var t = 0;
         
-
-
-        // var i = 0;
-        
-        // setInterval(function() {
-        //     $('.home-bg').style.backgroundImage = "url(" + images[i] + ")";
-        //     i = i + 1;
-        //     if (i == images.length) {
-        //         i =  0;
-        //     }
-        // }, 1000);
+         $(".pic1").css("opacity", "1");
+         start();
+       
+         function start(){
+            setInterval(function hello() {
+                
+                if (next > length) {
+                    next = 1;
+                }
+                
+                $('.pic'+ count).animate({opacity: "0"}, 1000);
+                $('.pic'+ next).animate({opacity: "1"}, 1000);
+                
+                count = next;
+                next++;
+                return hello
+            }, 5000);
+        }
 
         //slogan
         $('.slogan > h1').fadeIn(750).next().next().fadeIn(1800);
@@ -75,3 +81,5 @@ $(function (){
             }
         });
     });
+
+    
