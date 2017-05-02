@@ -10,11 +10,6 @@
     transition: filter 0.3s ease;
 }
 
-.footer-nav.is-overlayed{
-    filter: brightness(10%);
-}
-
-
 
 
 

@@ -13,25 +13,10 @@ $(function() {
 
     //mobile-nav toggle
     $('.close').on('click', function() {
-        $('.mobile-nav, .close, .overlay').toggleClass('is-opened');
-        $('.bg-pic, .navbar, .mobile-nav-brand, .project-img > img, .progress-bar, hr, h1, .project-pic > img, .footer-nav, .form-community > .cm-btn, input, button, textarea, select').toggleClass('is-overlayed');
-            if(!$('.slogan').hasClass('is-overlayed'))
-                $('.slogan').removeClass('no-overlayed').addClass('is-overlayed');
-            else{
-                $('.slogan').removeClass('is-overlayed').addClass('no-overlayed');
-            }
+        $('.mobile-nav, .close, .nav-brand, .header, .content').toggleClass('is-opened');
     });
 
-    $(document).on('click', function (e) {
-        if($(e.target).closest(".mobile-nav,.close").length === 0) {
-            $('.footer-nav').removeClass('is-overlayed');
-        }
-
-        if($(e.target).closest(".mobile-nav,.close").length === 0) {
-                $(".bg-pic, .navbar, .mobile-nav-brand, .project-img > img, .progress-bar, hr, h1, .slogan, .form-community > .cm-btn").removeClass('is-overlayed');
-                //$('.slogan').removeClass('is-overlayed');
-            }
-    });
+    
 
    
 
@@ -54,6 +39,20 @@ $(function() {
         $('.mobile-dropdown2 > .mobile-dropdown-list').toggleClass('is-opened');
     });
 
+    $(window).scroll(function() {
+            var scrollTop = $(this).scrollTop();
+
+            //navbar animation
+            if(scrollTop > 0){
+                if(!$('.close').hasClass('is-opened')){
+                    $('.close, .nav-menu > li > a').addClass('is-shrinked');
+                }
+                
+            }else if(scrollTop == 0){
+                $('.close, .nav-menu > li > a').removeClass('is-shrinked');
+            }
+    });
+
     
 
     //click anywhere else to close
@@ -63,7 +62,7 @@ $(function() {
         }
 
         if($(e.target).closest(".mobile-nav,.close").length === 0) {
-            $(".mobile-nav, .close, .overlay").removeClass('is-opened');
+            $(".mobile-nav, .close, .nav-brand").removeClass('is-opened');
         }
 
         if($(e.target).closest(".mobile-dropdown").length === 0) {

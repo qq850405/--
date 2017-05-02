@@ -7,7 +7,7 @@ header{
 
 
 .navbar{
-    color: black;
+    color: white;
     height: 90px;
     border: black solid 1px;
     background-color: white;
@@ -17,6 +17,7 @@ header{
 
 .nav-brand{
     padding: 37px;
+    color: black;
 }
 
 .mobile-nav-brand{
@@ -39,12 +40,21 @@ header{
     padding: 20px;
 }
 
+.nav-menu li a{
+    color: black;
+}
+
+
 .nav-menu li.nav-search{
     padding: 25px 0;
 }
 
 ul.dropdown-list{
     top: 20px;
+}
+
+.close span, .close span::before, .close span::after{
+    background-color: black;
 }
 
 
