@@ -16,7 +16,7 @@ header{
 
 
 .nav-brand{
-    padding: 37px;
+    padding: 30px 6%;
     color: black;
 }
 
@@ -65,7 +65,7 @@ ul.dropdown-list{
 }
 
 .nav-brand.is-shrinked{
-    padding: 26px 37px;
+    padding: 20px 6%;
 }
 
 .nav-menu.is-shrinked{
@@ -82,6 +82,10 @@ ul.dropdown-list{
 
 ul.dropdown-list.is-shrinked{
     top: 10px;
+}
+
+.close{
+    top: 2%;
 }
 
 @media(max-width:960px) {

@@ -21,20 +21,23 @@ h1.title{
 
 /*about us*/
 section.about-us{
-    height: 100vh;
+    padding: 0 0 550px 0;
 }
 
 .about-us article{
+    position: relative;
     margin-top: 50px;
     line-height: 30px;
     font-size: 20px;
-    display: none;
+    opacity: 0;
+    transition: 0.8s ease;
 }
 
 /*projects*/
 
 section.project-wrapper{
     padding: 0;
+    margin: 50px 0 0 0;
 }
 
 .projects{

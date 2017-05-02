@@ -33,7 +33,7 @@ $(function (){
 
             //about-us fade in
             if(scrollTop >= x){
-                $('.about-us > article').fadeIn(800);
+                $('.about-us > article').css({'opacity': '1'});
             }
                 
             var sloganTop = $('.slogan').offset().top;

@@ -44,9 +44,10 @@
 
     .nav-brand{
         float: left;
-        padding: 45px;
-        font-size: 20px;
+        padding: 40px 6%;
+        font-size: 30px;
         color: white;
+        font-family: "JXC";
         transition: 0.3s ease;
     }
 
@@ -274,7 +275,7 @@
 
     .mobile-nav-menu{
         position: relative;
-        top: 25%;
+        top: 17%;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -358,16 +359,16 @@
     
 
     .close{
-        height: 35px;
-        width: 35px;
+        height: 30px;
+        width: 30px;
         position: fixed;
-        top: 1.5%;
-        left: 94%;
+        top: 4.5%;
+        left: 93%;
         cursor: pointer;
         margin-top: 15px;
         z-index: 200;
         display: none;
-        transition: 0.3s ease;
+        transition: top 0.3s ease;
         z-index: 250;
     }
 
@@ -397,12 +398,12 @@
     }
 
     .close span::before{
-        bottom: 14.5px;
+        bottom: 11px;
         transition-property: background, bottom, transform;
     }
 
     .close span::after{
-        top: 14.5px;
+        top: 11px;
         transition-property: background, top, transform;
     }
 
@@ -460,7 +461,7 @@
     }
 
     .nav-brand.is-shrinked{
-        padding: 28px 45px;
+        padding: 20px 6%;
         color: black;
     }
 
@@ -593,7 +594,7 @@
     }
 
     .close.is-shrinked{
-        top: 0;
+        top: 1%;
     }
 
     .close.is-shrinked span, .close.is-shrinked span::before, .close.is-shrinked span::after{
