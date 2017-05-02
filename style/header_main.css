@@ -259,7 +259,7 @@
         background-color: rgba(255, 255, 255, 1);
         display: none; 
         padding-top: 70px;
-        transition: 0.3s ease;
+        transition: 0.5s ease;
         z-index: 150;
     }
 
@@ -371,31 +371,39 @@
         z-index: 250;
     }
 
-    .close span, .close span::before, .close span::after{
+    .close span::before, .close span::after{
         content: '';
         display: block;
         position: absolute;
         left: 0;
         background-color: white;
         height: 4px;
-        width: 35px;
+        width: 30px;
         border-radius: 4px;
-        transition: 0.3s ease;
+        transition-duration: 0.3s;
+        transition-delay: 0s, 0.3s, 0s;
     }
 
     .close span{
+        position: absolute;
+        left: 0;
+        background-color: white;
+        height: 4px;
+        width: 30px;
+        border-radius: 4px;
         top: 50%;
+        transition-duration: 0.3s;
         transform: translateX(-50%);
     }
 
     .close span::before{
         bottom: 14.5px;
-        transition: 0.3s cubic-bezier(.24,-0.6,.79,1.61);
+        transition-property: background, bottom, transform;
     }
 
     .close span::after{
         top: 14.5px;
-        transition: 0.3s cubic-bezier(.24,-0.6,.79,1.61);
+        transition-property: background, top, transform;
     }
 
     .mobile-nav-brand{
@@ -566,14 +574,18 @@
 
     .close.is-opened span::before{
         background-color: black;
-        transform-origin: left;
-        transform: rotate(45deg) scale(1.141421);
+        bottom: 0;
+        transform: rotate(45deg);
     }
 
     .close.is-opened span::after{
         background-color: black;
-        transform-origin: left;
-        transform: rotate(-45deg) scale(1.141421);
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .close.is-opened span::before, .close.is-opened span::after{
+        transition-delay: 0s, 0s, 0.3s;
     }
 
     .nav-brand.is-opened{
