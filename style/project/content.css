@@ -105,7 +105,21 @@ h1.project-name{
 }
 
 .project-content{
-    border: black solid 1px;
+    margin: 0 auto 20px auto;
+}
+
+.textarea{
+    margin: 0 auto;
+}
+
+.project-content form input[type=submit]{
+    margin: 20px 0 0 0;
+    position: relative;
+    float: right;
+}
+
+.project-gift hr{
+    display: none;
 }
 
 .gift{
@@ -183,5 +197,15 @@ h1.project-name{
 
     .project{
         min-width: 100%;
+    }
+
+    .project-content form input[type=submit]{
+        right: 50%;
+        transform: translateX(50%);
+        width: 100%;
+    }
+
+    .project-gift hr{
+        display: block;
     }
 }

@@ -6,6 +6,7 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" type = "text/css" href = "style/project/main.css">
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="ckeditor/ckeditor.js"></script>
         <script src = "js/project.js"></script>
         <script src = "js/share.js"></script>
     </head>
@@ -50,9 +51,14 @@
                     </nav>
                     <div class = "project-lower row">
                         <div class = "project-content columns eight">
-                            <textarea style = "height: 400px; width: 100%;"></textarea>
+                            <form>
+                                <textarea name = "textarea" class = "textarea" style = "margin: auto;"></textarea>
+                                <input type = "submit" value = "完成">
+                            </form>
+       
                         </div>
                         <div class = "project-gift columns four">
+                            <hr>
                             <div class = "gift">
                                 <div class = "gift-pic">43246531</div>
                                 <div class = "gift-intro">
@@ -97,3 +103,7 @@
         </footer>
     </body>
 </html>
+
+<script>
+    CKEDITOR.replace('textarea1');
+</script>

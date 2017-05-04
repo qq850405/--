@@ -18,4 +18,9 @@ $(function() {
             $('.navbar, .nav-brand, .nav-menu, .nav-menu > li, .dropdown-list').removeClass('is-shrinked')
         }
     });
+
+    //textarea
+    CKEDITOR.replace('textarea');
+    
+
 });
