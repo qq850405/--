@@ -88,11 +88,6 @@ ul.dropdown-list.is-shrinked{
     top: 2%;
 }
 
-@media(max-width:960px) {
-    .nav-hr{
-        display: block;
-    }
-}
 
 
 

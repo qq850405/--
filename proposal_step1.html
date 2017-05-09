@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>微望 We Want</title>
+        <meta charset = "utf-8">       
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" type = "text/css" href = "style/proposal/step1/main.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src = "js/project.js"></script>
+    </head>
+    <script>
+        $(function(){
+            $("header").load("navbar.html"); 
+            $("footer").load("footer.html");
+        });
+        
+    </script>
+    <body>
+        <header></header>
+        
+        <main>
+            <div class = "progress">
+                <a href = "proposal_step1.html"><div class = "circle active">1</div></a>
+                <div class = "line"></div>
+                <a href = "proposal_step2.html"><div class = "circle">2</div></a>
+                <div class = "line"></div>
+                <a href = "proposal_step3.html"><div class = "circle">3</div></a>
+                <div class = "line"></div>
+                <a href = "proposal_step4.html"><div class = "circle">4</div></a>
+            </div>
+            <h1 class = "content-title">Step1:專案基本資料</h1>
+            <div class = "content">
+                <form class = "info">
+                    <div class = "form-group">
+                        <label for = "title">專案標題</label>
+                        <input type = "text" id = "title" name = "title">
+                    </div>
+                    <div class = "form-group">
+                        <label for = "author">提案人</label>
+                        <input type = "text" id = "author" name = "author">
+                    </div>
+                    <div class = "form-group">
+                        <label>專案封面照片</label>
+                        <label for = "pic" class = "img-upload">上傳</label>
+                        <input type = "file" id = "pic" name = "pic" size = "200px" accept = "image/*">
+                    </div>
+                    <div class = "form-group">
+                        <label for = "intro">專案簡介</label>
+                        <textarea id = "intro" name = "intro"></textarea>
+                    </div>
+                    <div class = "form-group">
+                        <label for = "begin-date">開始日期</label>
+                        <input type = "text" id = "begin-date" name = "begin-date">
+                    </div>
+                    <div class = "form-group">
+                        <label for = "duration">募款時間</label>
+                        <input type = "text" id = "duration" name = "duration">
+                    </div>
+                    <div class = "form-group">
+                        <label for = "money">目標金額</label>
+                        <input type = "text" id = "money" name = "money">
+                    </div>
+                    <input type = "submit" value = "儲存">
+                </form>
+            </div>
+        </main>
+
+        <footer></footer>
+    </body>
+</html>
