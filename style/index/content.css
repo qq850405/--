@@ -1,9 +1,11 @@
 main{
     position: relative;
+    background-color: rgb(236,234,227, 0.5);
 }
 
 .content{
-    margin: 0 auto 100px auto;
+    padding: 0 0 100px 0;
+    margin: 0 auto;
     width: 1160px;
 }
 
@@ -16,12 +18,11 @@ section.about-us, section.project-wrapper{
 h1.title{
     text-align: center;
     font-size: 30px;
-    margin-top: 80px;
 }
 
 /*about us*/
 section.about-us{
-    padding: 0 0 550px 0;
+    padding: 80px 0 550px 0;
 }
 
 .about-us article{
@@ -46,17 +47,23 @@ section.project-wrapper{
 
 .project{
     position: relative;
-    border-radius: 10px;
+    border-radius: 7px;
     word-wrap: break-word;
     opacity: 0;
     border: black solid 1px;
+    background-color: white;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.project:hover{
+    box-shadow: 0px 0px 14px 0px #888888;
 }
 
 
 .project-img img{
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 7px 7px 0 0;
     z-index: 0;
     transition: 0.3s ease;
 }
@@ -83,7 +90,7 @@ section.project-wrapper{
     height: 15px;
     border: black solid 1px;
     border-radius: 4px;
-    background: linear-gradient(to right, seagreen 70%, white 0%);
+    background: linear-gradient(to right, rgb(85,164,78) 70%, white 0%);
 }
 
 

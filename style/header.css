@@ -9,7 +9,6 @@ header{
 .navbar{
     color: white;
     height: 90px;
-    border: black solid 1px;
     background-color: white;
     animation: 0.3s ease;
 }

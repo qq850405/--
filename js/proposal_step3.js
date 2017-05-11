@@ -1,4 +1,6 @@
 $(function() {
+
+
     $('body').on('keyup', function() {
         if($('#title').val() !== '' && $('#money').val() !== '' && $('#send').val() !== ''){
             $('.add-disabled').css({'display': 'none'});
@@ -9,4 +11,6 @@ $(function() {
             $('.add-one').css({'display': 'none'});
         }
     });
+
+    $( "#send" ).datepicker({ dateFormat: 'yy-mm-dd' }); 
 });

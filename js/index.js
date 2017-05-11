@@ -4,8 +4,6 @@ $(function (){
         //slogan
         $('.slogan > h1').fadeIn(750).next().next().fadeIn(1800);
         $('.home-btn').delay(1000).fadeIn(750);
-
-
         
         
 
@@ -14,9 +12,9 @@ $(function (){
         
     
         $(window).scroll(function() {
-            var scrollTop = $(this).scrollTop();
+            
             var x = $('.about-us').offset().top;
-
+            var scrollTop = $(this).scrollTop();
             //navbar animation
             if(scrollTop > 0){
                 $('.navbar').addClass('white is-shrinked');

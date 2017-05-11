@@ -8,7 +8,7 @@ main{
     background-color: white;
     width: 40%;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .add-disabled{
@@ -17,7 +17,8 @@ main{
     align-items: center;
     float: right;
     position: absolute;
-    right: 30px;
+    top: 20px;
+    right: 20px;
     width: 60px;
     height: 40px;
     border-radius: 5px;
@@ -34,19 +35,22 @@ main{
     align-items: center;
     float: right;
     position: absolute;
-    right: 30px;
+    top: 20px;
+    right: 20px;
     width: 60px;
     height: 40px;
     border-radius: 5px;
     font-weight: bold;
     color: white;
     background-color: #212342;
+    box-shadow: 0px 2px 3px 0px #888888;
     cursor: pointer;
-    transition: 0.03s;
+    transition: 0.2s;
 }
 
 .add-one:hover{
-    background-color: rgb(255,69,0);
+    background-color: rgb(189,65,55);
+    box-shadow: 0px 7px 8px 0px #888888;
 }
 
 .content-title{
@@ -138,7 +142,20 @@ main{
 
 .img-upload:hover{
     color: white;
-    background-color: lightskyblue;
+    background-color: rgb(189,65,55);
+}
+
+input[type=submit], button{
+    color: white;
+    background-color: rgb(189,65,55);
+    border-radius: 8px;
+    box-shadow: 0px 2px 3px 0px #888888;
+    transition: 0.25s;
+}
+
+input[type=submit]:hover, button:hover{
+    color: white;
+    box-shadow: 0px 7px 8px 0px #888888;
 }
 
 @media(max-width: 960px){
@@ -154,5 +171,9 @@ main{
 @media(max-width: 750px){
     .content .form-group{
         width: 100%;
+    }
+
+    input[type=submit], button{
+        width: 80%;
     }
 }

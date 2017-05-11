@@ -425,3 +425,27 @@ td,
 th {
   padding: 0;
 }
+
+input[type=submit], button{
+    color: white;
+    background-color: rgb(189,65,55);
+    border-radius: 8px;
+    box-shadow: 0px 2px 3px 0px #888888;
+    transition: 0.25s;
+}
+
+input[type=submit]:hover, button:hover{
+    color: white;
+    box-shadow: 0px 7px 8px 0px #888888;
+}
+
+input[type=text], textarea{
+    background-color: white;
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+    transition: 0.25s;
+}
+
+input[type=text]:focus, textarea:focus{
+    border-color: rgb(187,76,54);
+    box-shadow: 0px 0px 4px 0px rgb(187,76,54);    
+}

@@ -11,8 +11,8 @@
         position: relative;
         height: 100vh;
         width: 100%;
-        box-shadow:inset 0 0 0 2000px rgba(26, 26, 26, 0.7);
-        background-image: url('../pics/IMG_4823.jpg');
+        box-shadow:inset 0 0 0 2000px rgba(26, 26, 26, 0.5);
+        background-image: url('../pics/IMG_5043.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -202,7 +202,8 @@
     }
 
     li.nav-search input:focus{
-        border-color: black;
+        border-color: rgb(187,76,54) !important;
+        box-shadow: 0px 0px 4px 0px rgb(187,76,54); 
     }
 
 
@@ -438,7 +439,6 @@
 
     .navbar.is-shrinked{
         height: 70px;
-        border: solid 1px black;
     }
 
     .nav-menu:hover{
@@ -504,7 +504,7 @@
     /*mobile-nav-search*/
     .mobile-nav-menu li.nav-search input.is-opened{
         width: 80%;
-        border: black solid 1px;
+        border: rgb(187,76,54) solid 1px;
         padding: 10px;
     }
 

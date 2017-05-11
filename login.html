@@ -16,41 +16,40 @@
         });
         
     </script>
-    <body class = "login">
+    <body>
         <header>
             <div class = "navigation"></div>
         </header>
         
         <main>
-            <div class = "overlay">
-                <div class = "content">
-                    <section class = "login">
-                        <h1>登入</h1>
-                        <div class = "form-login">
-                            <div class = "form-community">
-                                <button class = "cm-btn fb" value = "Facebook"></button>
-                                <button class = "cm-btn google" value = "Google"></button>
-                            </div><div class = "hr-sect">or</div>
-                            <form>
-                                <input id = "account" type = "text" placeholder = "帳號"><br>
+            <div class = "content">
+                <section class = "login">
+                    <h1>登入</h1>
+                    <div class = "form-login">
+                        <div class = "form-community">
+                            <a href = "#" class = "cm-btn fb"><i class="fa fa-facebook"></i></a>
+                            <a href = "#" class = "cm-btn google"><i class="fa fa-google"></i></a>
+                        </div><div class = "hr-sect">or</div>
+                        <form>
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input id = "account" type = "text" placeholder = "帳號"><br>
+                            <i class="fa fa-key"></i>
+                            <input id = "password" type = "text" placeholder = "密碼"><br>
+                            
+                            <div>
+                                <span id = "verify-checkbox" class = "verify-checkbox">
+                                    
+                                </span>
+                                <img src = "pics/check.png">
+                                <h1 class = "verify">I'm not a robot</h1>
+                            </div>
+                            <br>
 
-                                <input id = "password" type = "text" placeholder = "密碼"><br>
-                                
-                                <div>
-                                    <span id = "verify-checkbox" class = "verify-checkbox">
-                                       
-                                    </span>
-                                    <img src = "pics/check.png">
-                                    <h1 class = "verify">I'm not a robot</h1>
-                                </div>
-                                <br>
-
-                                <input type = "submit" value = "登入">
-                            </form>
-                            <h1>還沒有帳號?立刻<a>註冊</a></h1>
-                        </div>
-                    </section>
-                </div>
+                            <input type = "submit" value = "登入">
+                        </form>
+                        <h1>還沒有帳號?立刻<a href = "login.html">註冊</a></h1>
+                    </div>
+                </section>
             </div>
         </main>
 
