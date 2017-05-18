@@ -63,11 +63,14 @@
 
     .nav-menu li{
         padding: 25px;
+        font-family: "JXC";
         transition: 0.3s ease;
     }
 
     .nav-menu li a{
+        font-size: 20px;
         color: white;
+        font-family: "JXC";
     }
 
     .dropdown li a{
@@ -79,6 +82,7 @@
         margin: 15px 0 0 0;
         transform: scaleX(0);
         border: white solid 1px;
+        border-radius: 2px;
         transition: 0.3s ease;
     }
 
@@ -195,6 +199,7 @@
         padding: 0;
         width: 0px;
         border: black solid 0;
+        text-indent: 0;
         color: black;
         background-color: white;
         transition: 0.3s ease;
@@ -363,8 +368,9 @@
         height: 30px;
         width: 30px;
         position: fixed;
-        top: 4.5%;
-        left: 93%;
+        float: right;
+        top: 15px;
+        right: 15px;
         cursor: pointer;
         margin-top: 15px;
         z-index: 200;
@@ -451,7 +457,7 @@
     }
 
     .black-underline{
-        border-color: black;
+        border-color: rgb(189,65,55);
         margin-top: 7px;
     }
 

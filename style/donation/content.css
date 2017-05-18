@@ -1,0 +1,156 @@
+main{
+    background-color: rgb(243,243,241);
+    padding: 200px 0 100px 0;
+}
+
+.content{
+    background-color: white;
+    width: 40%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.content-title1{
+    text-align: center;
+    width: 700px;
+    margin: 30px auto 20px auto;
+    font-family: "微軟正黑體";
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.content-title2{
+    text-align: center;
+    width: 400px;
+    margin: 30px auto 20px auto;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: gray;
+}
+
+
+.progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 40px auto;
+}
+
+.progress .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(255,212,196);
+}
+
+.progress .line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 4px;
+    background-color: rgb(255,212,196);
+}
+
+.progress .active{
+    background-color: lightseagreen;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "微軟正黑體";
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 40px 0;
+    width: 60%;
+}
+
+.form-group label{
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(101,101,101);
+}
+
+.form-group input{
+    width: 80%;
+}
+
+.form-group textarea{
+    width: 80%;
+}
+
+.form-group input[type=file]{
+    display: none;
+}
+
+.form-group .img-upload{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    height: 40px;
+    padding: 10px 12px;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.img-upload:hover{
+    color: white;
+    background-color: rgb(189,65,55);
+}
+
+input[type=submit], button{
+    color: white;
+    background-color: rgb(189,65,55);
+    border-radius: 8px;
+    box-shadow: 0px 2px 3px 0px #888888;
+    transition: 0.25s;
+}
+
+input[type=submit]:hover, button:hover{
+    color: white;
+    box-shadow: 0px 7px 8px 0px #888888;
+}
+
+.ui-datepicker {   
+      font-size:62.5%; 
+}
+
+.ui-datepicker-header{
+    color: rgb(189,65,55);
+}
+
+@media(max-width: 960px){
+    .content{
+        width: 80%;
+    }
+
+    .progress{
+        width: 80%;
+    }
+}
+
+@media(max-width: 750px){
+    .content .form-group{
+        width: 90%;
+    }
+
+    input[type=submit], button{
+        width: 72%;
+    }
+}
